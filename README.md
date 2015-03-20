@@ -4,6 +4,21 @@
 android configs - proguard
 
 
+
+##Reference
+1. [http://proguard.sourceforge.net/index.html#manual/usage.html](http://proguard.sourceforge.net/index.html#manual/usage.html)
+2. [http://proguard.sourceforge.net/index.html#manual/examples.html](http://proguard.sourceforge.net/index.html#manual/examples.html)
+3. [http://developer.android.com/tools/help/proguard.html](http://developer.android.com/tools/help/proguard.html)
+4. [https://chromium.googlesource.com/external/google-cache-invalidation-api/+/master/src/example-app-build/proguard.cfg](https://chromium.googlesource.com/external/google-cache-invalidation-api/+/master/src/example-app-build/proguard.cfg)
+5. [https://google-gson.googlecode.com/svn/trunk/examples/android-proguard-example/proguard.cfg](https://google-gson.googlecode.com/svn/trunk/examples/android-proguard-example/proguard.cfg)
+6. [https://github.com/47deg/translate-bubble-android/blob/master/proguard-sbt.txt](https://github.com/47deg/translate-bubble-android/blob/master/proguard-sbt.txt)
+7. [http://sourceforge.net/p/proguard/discussion/182456/thread/32de9f92/](http://sourceforge.net/p/proguard/discussion/182456/thread/32de9f92/)
+8. [http://www.cnblogs.com/royi123/archive/2013/02/28/2937657.html](http://www.cnblogs.com/royi123/archive/2013/02/28/2937657.html)
+9. [https://code.google.com/p/csipsimple/source/browse/trunk/CSipSimple/proguard.cfg](https://code.google.com/p/csipsimple/source/browse/trunk/CSipSimple/proguard.cfg)
+10. [http://blog.csdn.net/lovexjyong/article/details/24652085](http://blog.csdn.net/lovexjyong/article/details/24652085)
+
+
+
 ##License
 ```
 Copyright (C) 2015 Snowdream Mobile <yanghui1986527@gmail.com>
