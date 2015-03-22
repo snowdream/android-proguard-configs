@@ -29,19 +29,35 @@
 # Suppress duplicate warning for system classes;  Blaze is passing android.jar
 # to proguard multiple times.
 -dontnote android.**
+-dontnote dalvik.**
+-dontnote com.android.**
 -dontnote google.**
 -dontnote java.**
 -dontnote javax.**
 -dontnote junit.**
--dontnote org.apache.
--dontnote dalvik.**
--dontnote com.android.internal.**
+-dontnote org.apache.**
+-dontnote org.json.**
+-dontnote org.w3c.dom.**
+-dontnote org.xml.sax.**
+-dontnote org.xmlpull.v1.**
+
 
 # Stop warnings about missing unused classes
+-dontwarn android.**
+-dontwarn dalvik.**
+-dontwarn com.android.**
+-dontwarn google.**
+-dontwarn java.**
+-dontwarn javax.**
+-dontwarn junit.**
+-dontwarn org.apache.**
+-dontwarn org.json.**
+-dontwarn org.w3c.dom.**
+-dontwarn org.xml.sax.**
+-dontwarn org.xmlpull.v1.**
 
 
-
-
+# Keep Options
 
 
 # Shrinking Options
