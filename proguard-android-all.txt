@@ -99,6 +99,22 @@
 
 
 # Obfuscation Options
+#-dontobfuscate
+-dontusemixedcaseclassnames
+
+#Counter-indication: classes that look for resource files in their package directories will no longer work properly if they are moved elsewhere. When in doubt, just leave the packaging untouched by not using this option.
+-repackageclasses ''
+
+#This option actually keeps trimmed versions of the debugging attributes LocalVariableTable and LocalVariableTypeTable. It can be useful when processing a library. 
+-keepparameternames
+
+#For library
+-keepattributes Exceptions,InnerClasses,Signature,Deprecated,
+                SourceFile,LineNumberTable,*Annotation*,EnclosingMethod
+
+#For app
+#-keepattributes *Annotation*
+
 
 # Preverification Options
 # Preverification is irrelevant for the dex compiler and the Dalvik VM, so we can switch it off with the -dontpreverify option.
