@@ -32,6 +32,7 @@
 -dontnote dalvik.**
 -dontnote com.android.**
 -dontnote google.**
+-dontnote com.google.**
 -dontnote java.**
 -dontnote javax.**
 -dontnote junit.**
@@ -47,6 +48,7 @@
 -dontwarn dalvik.**
 -dontwarn com.android.**
 -dontwarn google.**
+-dontwarn com.google.**
 -dontwarn java.**
 -dontwarn javax.**
 -dontwarn junit.**
@@ -61,10 +63,41 @@
 -dontskipnonpubliclibraryclassmembers
 
 # Keep Options
+-keep public class * extends android.app.Activity
+-keep public class * extends android.app.Application
+-keep public class * extends android.app.Service
+-keep public class * extends android.content.BroadcastReceiver
+-keep public class * extends android.content.ContentProvider
+-keep public class * extends android.app.backup.BackupAgentHelper
+-keep public class * extends android.preference.Preference
+-keep public class com.google.vending.licensing.ILicensingService
+-keep public class com.android.vending.licensing.ILicensingService
 
 
 # Shrinking Options
+
+
 # Optimization Options
+# -dontoptimize
+-optimizationpasses 5
+-optimizations !code/simplification/arithmetic,!field/*,!class/merging/*,!code/allocation/variable
+
+# In the optimization step, ProGuard will then remove calls to such methods, if it can determine that the return values aren't used.
+
+# -assumenosideeffects class android.util.Log {
+#     public static boolean isLoggable(java.lang.String, int);
+#     public static int v(...);
+#     public static int i(...);
+#     public static int w(...);
+#     public static int d(...);
+#     public static int e(...);
+# }
+
+#Specifies that the access modifiers of classes and class members may be broadened during processing.
+#Counter-indication: you probably shouldn't use this option when processing code that is to be used as a library, since classes and class members that weren't designed to be public in the API may become public.
+-allowaccessmodification
+
+
 # Obfuscation Options
 
 # Preverification Options
