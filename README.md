@@ -6,7 +6,7 @@ android configs - proguard
 ##How To Use
 Clone the repo,and copy all the proguard config files to <Android SDK>/tools/proguard.       
 For App,proguard-android-app-optimize.txt is suggested.
-For Library,proguard-android-lib-optimize.txt is suggested.
+For Library,proguard-android-lib.txt is suggested.
 
 
 ##Reference
