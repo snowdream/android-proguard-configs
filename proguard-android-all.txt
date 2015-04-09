@@ -120,6 +120,7 @@
 }
 
 -keepclassmembers,allowoptimization enum * {
+    <init>(...);
     public static **[] values();
     public static ** valueOf(java.lang.String);
 }
@@ -170,7 +171,7 @@
 
 #For library
 -keepattributes Exceptions,InnerClasses,Signature,Deprecated,
-                SourceFile,LineNumberTable,*Annotation*,EnclosingMethod
+                SourceFile,LineNumberTable,*Annotation*,EnclosingMethod,MethodParameters
 
 #For app
 #-keepattributes *Annotation*

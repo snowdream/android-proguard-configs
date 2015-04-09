@@ -120,6 +120,7 @@
 }
 
 -keepclassmembers,allowoptimization enum * {
+    <init>(...);
     public static **[] values();
     public static ** valueOf(java.lang.String);
 }
@@ -160,7 +161,7 @@
 
 #For library
 -keepattributes Exceptions,InnerClasses,Signature,Deprecated,
-                SourceFile,LineNumberTable,*Annotation*,EnclosingMethod
+                SourceFile,LineNumberTable,*Annotation*,EnclosingMethod,MethodParameters
 
 # Preverification Options
 # Preverification is irrelevant for the dex compiler and the Dalvik VM, so we can switch it off with the -dontpreverify option.
