@@ -141,7 +141,7 @@
 # Optimization Options
 # -dontoptimize
 -optimizationpasses 5
--optimizations !code/simplification/arithmetic,!field/*,!class/merging/*,!code/allocation/variable
+-optimizations !code/simplification/arithmetic,!field/*,!class/merging/*,!code/allocation/variable,!class/unboxing/enum
 
 # In the optimization step, ProGuard will then remove calls to such methods, if it can determine that the return values aren't used.
 
